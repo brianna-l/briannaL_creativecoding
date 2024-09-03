@@ -1,0 +1,124 @@
+body {
+    background: radial-gradient(circle, rgb(28, 27, 27) 90%, rgb(231, 227, 221) 100%);
+}
+img {width: 70%; border-radius: 100px;}
+
+/* Header */
+.high, .low {
+    width: 97%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 3;
+    
+    color: white;
+    font-weight: 100;
+    mix-blend-mode: difference;
+}
+.high {
+    opacity: 30%;
+}
+.low {
+    margin-top: 70px;
+    cursor: context-menu;
+}
+#o1:hover {color: #ff66e0;}
+#o2:hover {color: #66fff7;}
+#o3:hover {color: #66ff94;}
+#o4:hover {color: #e8ff66;}
+#o5:hover {color: #666bff;}
+#o6:hover {color: #ff8766;}
+
+/* TEXT */
+#textContainer {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: #ffffff;
+
+    z-index: 1;
+
+    mix-blend-mode: difference;
+    animation: fade-in 3s linear, flash 1s infinite;
+
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+}
+.hidden {
+    display: none;
+}
+@keyframes fade-in {
+    0% {filter: blur(10px);}
+    100% {filter: blur(0px);}
+}
+@keyframes flash {
+    0% {opacity: 0.95;}
+    30% {opacity: 1;}
+    50% {opacity: 0.9;}
+    80% {opacity: 1;}
+    100% {opacity: 0.95;}
+}
+
+/* CUBE */
+/* Citing from https://youtu.be/niwUUtgn4-o?si=2tDcsfo7iJ5RmyTo */
+.container {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+}
+.cube {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    transform: rotateX(-20deg) rotateY(30deg);
+    animation:  rotate-cube 20s infinite linear;
+}
+.side {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 45%;
+    opacity: 20%;
+    cursor: pointer;
+}
+.front.side {
+    background-color: #66fff7;
+    transform: translateZ(250px);
+}
+.back.side {
+    background-color: #66ff94;
+    transform: translateZ(-250px);
+}
+.right.side {
+    background-color: #ff66e0;
+    transform: translateX(250px) rotateY(90deg);
+}
+.left.side {
+    background-color: #e8ff66;
+    transform: translateX(-250px) rotateY(-90deg);
+}
+.top.side {
+    background-color: #666bff;
+    transform: translateY(-250px) rotateX(90deg);
+}
+.bottom.side {
+    background-color: #ff8766;
+    transform: translateY(250px) rotateX(-90deg);
+}
+
+@keyframes rotate-cube {
+    0% { transform: rotateX(45deg) rotateY(45deg);}
+    25% { transform: rotateX(-45deg) rotateY(45deg);}
+    50% { transform: rotateX(-45deg) rotateY(-45deg);}
+    75% { transform: rotateX(45deg) rotateY(-45deg);}
+    100% { transform: rotateX(45deg) rotateY(45deg);}
+}
+
+.side:hover {
+    opacity: 1;
+}
