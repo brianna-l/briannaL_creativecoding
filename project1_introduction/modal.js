@@ -3,7 +3,7 @@ const modalsHtml = `
     <div id="ModalFront" class="modal">
         <div id="ModalF" class="modal-content">
             <span class="close">&#127960;</span>
-            <p>--</p>
+            <h1>snapshots</h1>
             <img src="media/8.jpg"></img>
             <a>dinner at #? Pier on Hudson R.</a>
             <img src="media/9.jpg"></img>
@@ -23,42 +23,48 @@ const modalsHtml = `
     <div id="ModalBack" class="modal">
         <div id="ModalB" class="modal-content">
             <span class="close">&#128467;</span>
-            <h1>random stuff</h1>
-            <p>blender, nomad, pixelart, design cloth for games, gamemaker</p>
+            <h1>random stuff I make</h1>
             <img src="media/1.jpg"></img>
             <img src="media/2.jpg"></img>
+            <img src="media/15.jpg"></img>
+            <img src="media/18.jpg"></img>
+            <img src="media/19.jpg"></img>
+            <img src="media/20.jpg"></img>
+            <img src="media/16.jpg"></img>
+            <img src="media/21.jpg"></img>
+            <img src="media/17.jpg"></img>
         </div>
     </div>
     <div id="ModalRight" class="modal">
         <div id="ModalR" class="modal-content">
-            <span class="close">&#128368;</span>
-            <p>I was born in Boston; went to kindergarten for a year, learned nothing but climbing monkey bars.</p>
-            <i>Then I moved to Beijing, and stayed for 6 years. Miss the days when icepop only costs 50cents.</i>
-            <p>For the next few years I lived in Shanghai. Not much to say about this place, but I it's definitely my favorite.</p>
+            <span class="close">&#128368;</span><br>
+            <p>I was born in Boston; went to kindergarten for a year, learned nothing but climbing monkey bars.</p><br>
+            <i>Then I moved to Beijing, and stayed for 6 years. Miss the days when icepop only costs 50cents.</i><br>
+            <p>For the next few years I lived in Shanghai. Not much to say about this place, but I it's definitely my favorite.</p><br>
             <i>And now I'm in Newyork...TBC</p>
         </div>
     </div>
     <div id="ModalLeft" class="modal">
         <div id="ModalL" class="modal-content">
             <span class="close">&#128192;</span>
-            <p>chill in summer</p>
+            <h1>for summer</h1>
             <iframe style="border-radius:50px" src="https://open.spotify.com/embed/playlist/04WZMGLSXuWDVc01MSFL2w?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
     <div id="ModalTop" class="modal">
         <div id="ModalT" class="modal-content">
             <span class="close">&#128444;</span>
-            <p>summer, sea, beach</p>
-            <p>nature, fresh air, sun</p>
-            <p>noon, cat, rest</p>
-            <p>music, livehouse, friend</p>
-            <p>night, light, bed</p>
+            <p>[ summer, sea, beach ]</p>
+            <p>[ nature, fresh air, sun ]</p>
+            <p>[ noon, cat, rest ]</p>
+            <p>[ music, livehouse, friend ]</p>
+            <p>[ night, light, bed ]</p>
         </div>
     </div>
     <div id="ModalBottom" class="modal">
         <div id="ModalBm" class="modal-content">
             <span class="close">&#9197;</span>
-            <p>--</p>
+            <h1>--</h1>
             <img src="media/3.jpg"></img>
             <img src="media/4.jpg"></img>
             <img src="media/5.jpg"></img>
