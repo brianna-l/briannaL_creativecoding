@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#container-1 {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    transition: 0.5s;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: blur(1px);
+  }
+  .square {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(247, 246, 246);
+  }
