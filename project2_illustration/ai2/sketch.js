@@ -4,14 +4,20 @@ let colors = ["#1C1C28", "#E0E2E5", "#0FFFC3", "#FF007F", "#FFBF00", "#FF4848"]
 ;
 let colors2 = ["#F5F5F5", "#333333", "#FF77B5", "#FFD700", "#77DDFF", "#FF6F61"]
 ;
-let text2 = ["AI", "is", "amazing", "!!!!"];
-let textS = [140, 100, 60, 140];
+let text2 = ["AI", "is", "amazing", "!!!!", ":D"];
+let textS = [140, 100, 60, 140, 140];
 
 let boxes = [];
+let myFont;
+function preload() {
+  myFont = loadFont('text.ttf');
+}
 
 function setup() {
-  createCanvas(600, 400);
+  let canvas = createCanvas(600, 400);
+  canvas.parent('canvasContainer');
   createNewBox(width / 2, height / 2, true);
+  textFont(myFont);
 }
 
 function draw() {
@@ -27,10 +33,11 @@ function draw() {
     strokeWeight(3);
     fill(box.colorB);
     rect(box.posX - (frameCount - box.frameCount) % 10, box.posY + (frameCount - box.frameCount) % 10, 300, 200);
-    fill("yellow");
+    fill("lightgray");
     rect(box.posX - (frameCount - box.frameCount) % 10, box.posY + (frameCount - box.frameCount) % 10, 300, 30);
 
     // TEXTPOS
+    stroke("white");
     fill(box.colorA);
     textSize(box.sizeX);
     let textWidthOffset = textWidth(box.textV) / 2;
