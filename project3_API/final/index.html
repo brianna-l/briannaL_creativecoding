@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nature</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js" defer></script>
+  </head>
+  <body>
+    <input type="range" id="tempSlider" min="-20" max="50" value="20" oninput="adjustTemp()" />
+    <button id="resetButton" onclick="resetToOriginal()">reset</button>
+    <div id="tempDisplay">Temperature: <span id="currentTemp"></span> °C</div>
+  </body>
+</html>

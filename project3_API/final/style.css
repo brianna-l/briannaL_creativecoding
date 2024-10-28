@@ -1,0 +1,38 @@
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#tempSlider {
+  -webkit-appearance: none;
+  position: fixed;
+  bottom: 10%;
+  width: 300px;
+  margin: 20px 0;
+  background: linear-gradient(to right, #00aaff, #ff004c);
+  border-radius: 10px;
+  outline: none;
+  margin: 20px 0;
+  transition: background 0.3s ease;
+}
+
+#resetButton {
+  position: fixed;
+  bottom: 5%;
+  width: 100px;
+  margin: 20px 0;
+  background: black;
+  border-radius: 10px;
+  color: white;
+}
+
+#tempDisplay {
+  color: #333;
+  position: fixed;
+  top: 10%;
+  margin-top: 20px;
+  transition: color 0.3s ease;
+}
