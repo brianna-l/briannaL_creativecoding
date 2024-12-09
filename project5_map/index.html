@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+</head>
+<body>
+    <div id="intro">🌌 Welcome to Aetheris: The Infinite Horizon 🌌
+    </div>
+    <div id="des">Step into a boundless digital cosmos where your dreams shape reality and the stars are within reach. In this universe, three extraordinary planets await your arrival. Each one holds mysteries to uncover, adventures to embark on, and a home for those daring enough to claim it.</div>
+    <div id="inf">Choose Your Destiny. Settle Your Story. Aetheris Awaits.</div>
+
+    <div id="ocean"></div>
+    <div id="city"></div>
+    <div id="chatroom"></div>
+
+    <div id="chat-modal">
+        <h1 class="info">Sylvara Resident Info</h1>
+        <button class="close-button">&times;</button>
+        <h3>Name:</h3>
+        <input id="chat-name-input" type="text" placeholder="Your Name">
+        <h3>Something about you:</h3>
+        <textarea id="chat-message-input" type="text" placeholder="Your Message"></textarea>
+        <button id="chat-send-button">Send</button>
+        <ul id="chat-content"></ul>
+      </div>
+      <div id="ocean-modal">
+        <h1 class="info">Aqualith Resident Info</h1>
+        <button class="close-button">&times;</button>
+        <h3>Name:</h3>
+        <input id="ocean-name-input" type="text" placeholder="Your Name">
+        <h3>Something about you:</h3>
+        <textarea id="ocean-message-input" type="text" placeholder="Your Message"></textarea>
+        <button id="ocean-send-button">Send</button>
+        <ul id="ocean-content"></ul>
+      </div>
+      <div id="city-modal">
+        <h1 class="info">Metronis Resident Info</h1>
+        <button class="close-button">&times;</button>
+        <h3>Name:</h3>
+        <input id="city-name-input" type="text" placeholder="Your Name">
+        <h3>Something about you:</h3>
+        <textarea id="city-message-input" type="text" placeholder="Your Message"></textarea>
+        <button id="city-send-button">Send</button>
+        <ul id="city-content"></ul>
+      </div>
+
+      <div id="count">
+        <p><i>Amount of Settlers:</i></p>
+        <p id="oc"><strong>Aqualith:</strong> <span id="ocean-count">0</span></p>
+        <p id="me"><strong>Metronis:</strong> <span id="city-count">0</span></p>
+        <p id="fo"><strong>Sylvara:</strong> <span id="forest-count">0</span></p>
+        <p><strong>Total:</strong> <span id="total-count">0</span></p>
+      </div>
+
+      <div class="player-container">
+        <audio id="audio-player" controls autoplay></audio>
+        <div class="controls">
+          <button id="prev">⇠</button>
+          <button id="next">⇢</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
